@@ -6,6 +6,6 @@ for bucket in s3.buckets.all():
     print(bucket.name)
 
 
-data = open('test', 'rb')
+data = open('/tmp/test', 'rb')
 
 s3.Bucket('monolithapp').put_object(Key='/tmp/test', Body=data)
