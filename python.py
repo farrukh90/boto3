@@ -8,4 +8,4 @@ for bucket in s3.buckets.all():
 
 data = open('test', 'rb')
 
-s3.Bucket('monolithapp').put_object(Key='test', Body=data)
+s3.Bucket('monolithapp').put_object(Key='/tmp/test', Body=data)
